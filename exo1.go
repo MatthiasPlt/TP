@@ -9,7 +9,6 @@ func Ft_coin(coins []int, amount int) int {
 	for i := range ndp {
 		ndp[i] = amount + 1
 	}
-
 	ndp[0] = 0
 
 	// calcule du nombre  minimum de pieces pour chaque valeurs
