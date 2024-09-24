@@ -30,13 +30,8 @@ func Ft_profit(prices []int) int {
 }
 
 func main() {
-	// Tests
-	result1 := Ft_profit([]int{7, 1, 5, 3, 6, 4}) // Résultat attendu : 5
-	fmt.Println(result1)                          // Affiche 5
-
-	result2 := Ft_profit([]int{1, 2, 3, 4, 5}) // Résultat attendu : 4 (acheter à 1, vendre à 5)
-	fmt.Println(result2)                       // Affiche 4
-
-	result3 := Ft_profit([]int{7, 6, 4, 3, 1}) // Résultat attendu : 0 (pas de bénéfice possible)
-	fmt.Println(result3)                       // Affiche 0
+	fmt.Println(Ft_profit([]int{7, 1, 5, 3, 6, 4})) // resultat : 5
+	// si on achète au jour 1, nous payons 1,
+	// et si nous le vendons au 4eme jour, nous gagnons 6, le bénéfice est 6-1
+	fmt.Println(Ft_profit([]int{7, 6, 4, 3, 1})) // resultat : 0
 }
