@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 func Ft_coin(coins []int, amount int) int {
 
 	ndp := make([]int, amount+1)
@@ -27,8 +25,10 @@ func Ft_coin(coins []int, amount int) int {
 	return ndp[amount]
 }
 
+/*
 func main() {
 	fmt.Println(Ft_coin([]int{1, 2, 5}, 11)) // Résultat : 3 (5 + 5 + 1)
 	fmt.Println(Ft_coin([]int{2}, 3))        // Résultat : -1 (impossible)
 	fmt.Println(Ft_coin([]int{1}, 0))        // Résultat : 0 (pas de pièces nécessaires)
 }
+*/

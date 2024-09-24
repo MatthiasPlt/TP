@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 func Ft_non_overlap(intervals [][]int) int {
 	if len(intervals) == 0 {
 		return 0
@@ -21,8 +19,10 @@ func Ft_non_overlap(intervals [][]int) int {
 	return intervals_a_supprimé
 }
 
+/*
 func main() {
 	fmt.Println(Ft_non_overlap([][]int{{1, 2}, {2, 3}, {3, 4}, {1, 3}})) // Résultat : 1
 	fmt.Println(Ft_non_overlap([][]int{{1, 2}, {2, 3}}))                 // Résultat : 0
 	fmt.Println(Ft_non_overlap([][]int{{1, 2}, {1, 2}, {1, 2}}))         // Résultat : 2
 }
+*/
